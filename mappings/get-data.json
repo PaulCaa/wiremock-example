@@ -1,0 +1,26 @@
+{
+    "mappings": [
+        {
+            "scenarioName": "Get Data OK",
+            "request": {
+                "method": "GET",
+                "url": "/api/v1/data/1234"
+            },
+            "response": {
+                "status": "200",
+                "bodyFileName": "get-data-ok.json"
+            }
+        },
+        {
+            "scenarioName": "Get Data Bad Request",
+            "request": {
+                "method": "GET",
+                "url": "/api/v1/data"
+            },
+            "response": {
+                "status": "400",
+                "bodyFileName": "get-data-400.json"
+            }
+        }
+    ]
+}

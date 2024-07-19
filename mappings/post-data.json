@@ -1,0 +1,27 @@
+{
+    "mappings": [
+        {
+            "scenarioName": "Post Data OK",
+            "request": {
+                "method": "POST",
+                "urlPattern": "/api/v1/data/(.*?)",
+                "headers": {
+                    "Authorization": {
+                        "contains": "a1b2c3d4"
+                    }
+                },
+                "bodyPatterns": [
+                    {
+                        "contains": "id"
+                    },
+                    {
+                        "contains": "description"
+                    }
+                ]
+            },
+            "response": {
+                "status": "201"
+            }
+        }
+    ]
+}
